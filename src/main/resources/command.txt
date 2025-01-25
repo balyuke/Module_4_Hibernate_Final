@@ -1,0 +1,9 @@
+== Docker
+docker run --name mysql_hibernate_final -d -p 127.0.0.1:3309:3306 -e MYSQL_ROOT_PASSWORD=root --restart unless-stopped -v //$PWD/mysql/data:/var/lib/mysql mysql:8.1
+
+docker run -d -p 127.0.0.1:6379:6379 redis
+
+== MySQL Workbench
+14:35:05 Restoring world (city)
+Running: mysql.exe --defaults-file="C:\Users\balyu\AppData\Local\Temp\tmpqhy8by73.cnf"  --protocol=tcp --host=127.0.0.1 --user=root --port=3309 --default-character-set=utf8 --comments  < "D:\\projects\\java\\jr\\Module_4_Hibernate_Final\\mysql\\init\\dump-hibernate-final.sql"
+14:35:06 Import of D:\projects\java\jr\Module_4_Hibernate_Final\mysql\init has finished
